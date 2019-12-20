@@ -16,3 +16,8 @@ for (int i = 0; i != 16; ++i)
     cout << hex << setw(2) << setfill('0') << (uint32_t)digest[i];  
 cout << endl;  
 ```
+
+主程序用法
+``` bash
+./md5 'hello world'
+```
