@@ -7,6 +7,10 @@ const char* message = "hello world";
 uint8_t digest[32];  
 md5(message, strlen(message), digest);  
 ```
+对文件进行md5
+``` cpp
+md5(filename, (char*)digest);
+```
 结果存储在digest中，以byte的形式存储。  
 如果message中间存在'\0'，那么要自己在md5的第二个参数指定长度  
   
